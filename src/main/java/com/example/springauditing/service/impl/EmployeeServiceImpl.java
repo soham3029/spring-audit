@@ -35,6 +35,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
         employee.setSalary(request.getSalary());
         employee.setCreated(new Date());
         employee.setUpdated(new Date());
+        employee.setDoj(request.getDoj());
         employee.setCreatedBy("Admin");
         employees.add(employee);
         List<Project> projectList = setProjectDetailsOfThatEmployee(request, employees);
